@@ -7,11 +7,24 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
     header { background-color: #0057b8; color: white; padding: 20px 0; text-align: center; }
-    nav { text-align: center; background: #003e8a; padding: 10px; }
+    nav {
+      text-align: center;
+      background: #003e8a;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px; max-width: 1000px; margin: auto; background: white; }
+    section { padding: 40px; max-width: 1000px; margin: 80px auto 0 auto; background: white; }
     footer { background-color: #0057b8; color: white; text-align: center; padding: 15px 0; }
     h2 { color: #0057b8; }
+    form label { display: block; margin-top: 10px; font-weight: bold; }
+    form input, form textarea, form select { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    form button { background-color: #0057b8; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    form button:hover { background-color: #003e8a; }
   </style>
 </head>
 <body>
@@ -27,6 +40,7 @@
     <a href="#casos">Casos</a>
     <a href="#servicos">Serviços</a>
     <a href="#contato">Contato</a>
+    <a href="#formulario">Solicite uma Visita</a>
   </nav>
 
   <section id="sobre">
@@ -84,9 +98,37 @@
 
   <section id="contato">
     <h2>Contato</h2>
-    <p>Email: contato@psnetwork.com.br</p>
-    <p>Telefone: (11) 1234-5678</p>
-    <p>Endereço: Rua das Conexões, 1000 - São Paulo, SP</p>
+    <p><strong>Endereço:</strong> Av. Sagitário 138 – Torre London – Sala 1514, Alphaville – Barueri, SP – 06473-073</p>
+    <p><strong>Telefone:</strong> +55 11 3522-9011</p>
+    <p><strong>Email:</strong> contato@psne.com.br</p>
+  </section>
+
+  <section id="formulario">
+    <h2>Solicite uma Visita ou Reunião Online</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone">
+
+      <label for="tipo">Tipo de Atendimento</label>
+      <select id="tipo" name="tipo">
+        <option value="visita">Solicitar Visita Técnica</option>
+        <option value="reuniao">Solicitar Reunião Online</option>
+      </select>
+
+      <label for="mensagem">Detalhes sobre seu projeto</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+      <button type="submit">Enviar Solicitação</button>
+    </form>
   </section>
 
   <footer>
@@ -94,3 +136,4 @@
   </footer>
 </body>
 </html>
+

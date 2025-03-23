@@ -6,12 +6,12 @@
   <title>PS Network Experts</title>
   <style>
     :root {
-      --azul-escuro: #0e1a2b;
-      --azul-claro: #007bff;
-      --cinza-claro: #f4f4f4;
-      --branco: #ffffff;
-      --texto-claro: #d9d9d9;
-    }
+  --azul-escuro: #0057b8;
+  --azul-claro: #007bff;
+  --cinza-claro: #f4f4f4;
+  --branco: #ffffff;
+  --texto-claro: #222222;
+}
 
     * {
       box-sizing: border-box;
@@ -20,15 +20,15 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--azul-escuro);
-      color: var(--texto-claro);
-      scroll-behavior: smooth;
-    }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--texto-claro);
+  scroll-behavior: smooth;
+}
 
     header {
-      background: url('https://psne.tech/static/media/banner-home.39a8cfecdb7ae2994b41.webp') no-repeat center center/cover;
-      text-align: center;
+      background-color: var(--azul-escuro);
+text-align: center;
       padding: 140px 20px 100px;
       color: var(--branco);
     }
@@ -45,18 +45,17 @@
     }
 
     nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(14, 26, 43, 0.95);
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      z-index: 999;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-      backdrop-filter: blur(6px);
-    }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--azul-escuro);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
 
     nav a {
       color: var(--branco);
@@ -126,12 +125,12 @@
     }
 
     footer {
-      background-color: var(--azul-escuro);
-      color: var(--texto-claro);
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
 
     .logo {
       position: absolute;
@@ -160,9 +159,6 @@
 </head>
 <body>
   <nav>
-    <div class="logo">
-      <img src="https://psne.tech/static/media/logo-psne-white.6b0b1264fc41ec6118c9.webp" alt="Logo PSNE">
-    </div>
     <a href="#sobre">Sobre</a>
     <a href="#indicadores">Indicadores</a>
     <a href="#diferenciais">Diferenciais</a>
